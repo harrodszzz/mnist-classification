@@ -1,4 +1,4 @@
-# mnist-classification
+# mnist_classification
 this repository is to classify mnist datas using labels of digits and rotating degrees
 to explore whether a new manifold exists, and can classify two digits in rotation parameters
 
