@@ -12,6 +12,15 @@ for i in range(y_size):
 	num = y[i]
 	y_oneHot[i,num] = 1
 
+# test 
+X_test,y_test = mnist_rot.load_mnist_rot(which='test')
+# make the labels one-hot
+y_test_size = y_test.size
+y_test_oneHot = np.zeros([y_test_size,10])
+for i in range(y_test_size):
+	num = y_test[i]
+	y_test_oneHot[i,num] = 1
+
 # define batch fcn
 def batch(images,labels,batch_size):
 	sizeOfSamples = images.shape[0]
@@ -81,4 +90,5 @@ for i in range(20000):
 		train_accuracy = accuracy.eval(feed_dict={x: x_batch, y_: y_batch, keep_prob: 1.0})
 		print("step %d, training accuracy %g" %(i, train_accuracy))
 	train_step.run(feed_dict={x: x_batch, y_:y_batch, keep_prob: 0.5})
-print("test accuracy %g" % accuracy.eval(feed_dict={x: X, y_: y_oneHot, keep_prob: 1.0}))
+
+print("test accuracy %g" % accuracy.eval(feed_dict={x: X_test, y_: y_test_oneHot, keep_prob: 1.0}))
