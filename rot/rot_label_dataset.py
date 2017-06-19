@@ -1,4 +1,4 @@
-# this file is to create the experiment dataset
+# this file is to create the experiment dataset.
 # images are rotated 2 and 4, and labels are merely their rotation degrees
 
 import dataset
