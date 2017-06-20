@@ -40,3 +40,5 @@ for i in range(11):
 		X_r[i*num+j,:] = dst.reshape(1,784)
 		y_r[i*num+j,i] = 1
 
+np.save('rot_images',X_r)
+np.save('rot_labels',y_r)
