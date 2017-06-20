@@ -12,5 +12,7 @@ labels of data are the digits of images
 
 I didn't implement data augmentation yet (06/19/2017)
 
+test accuracy is 0.945
+
 ## labels of rotation
 test accuracy is around 0.26, this method did not work.(06/20/2017)
