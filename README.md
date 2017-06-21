@@ -16,3 +16,4 @@ test accuracy is 0.945
 
 ## labels of rotation
 test accuracy is around 0.26, this method did not work.(06/20/2017)
+traditional 2-layer nn, accuracy, 0.88
